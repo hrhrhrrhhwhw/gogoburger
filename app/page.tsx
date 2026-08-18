@@ -1,18 +1,24 @@
-import { Button } from "@/components/ui/button"
+import Category from '@/components/category'
+import Header from '@/components/header'
+import Nav from '@/components/nav'
+import ProductCard from '@/components/product-card'
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+    <div>
+      <Nav />
+      <Header />
+      <Category />
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-4 max-w-4xl'>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </div>
   )
