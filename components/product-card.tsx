@@ -1,16 +1,38 @@
-export default function ProductCard() {
-  return (
-    <div className="group flex max-w-[193px] cursor-pointer flex-col items-center transition-all duration-300 ease-out hover:-translate-y-1">
-      <img
-        src="https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/74e6ddde00fbe9e8e554ba96a21592e5.png"
-        alt="Ангус 4 Сыра"
-        className="h-[193px] w-[193px] transition-transform duration-300 group-hover:scale-105"
-      />
+import { Prisma } from '@/app/generated/prisma/client'
 
-      <span className="pb-2 text-xl font-bold">Ангус 4 Сыра</span>
+type ProductCardProps = {
+  product: Prisma.ProductGetPayload<{
+    select: {
+      categoryId: true
+      price: true
+      imageUrl: true
+      translations: {
+        select: {
+          name: true
+          slug: true
+        }
+      }
+    }
+  }>
+}
+
+export default function ProductCard({ product }: ProductCardProps) {
+  return (
+    <div className="group flex w-[193px] cursor-pointer flex-col items-center">
+      <div className="flex h-[193px] w-[193px] items-center justify-center">
+        <img
+          src={product.imageUrl}
+          alt={product.translations[0]?.name}
+          className="h-full w-full object-contain transition-transform duration-300 ease-out group-hover:scale-105"
+        />
+      </div>
+
+      <div className="flex h-24 items-center justify-center">
+        <span className="text-center text-lg font-bold">{product.translations[0]?.name}</span>
+      </div>
 
       <span className="w-36 rounded-4xl bg-muted px-4 py-2 text-center text-lg transition-colors duration-300 group-hover:bg-foreground group-hover:text-background">
-        2608 AMD
+        {product.price} AMD
       </span>
     </div>
   )

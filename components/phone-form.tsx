@@ -25,7 +25,7 @@ export default function PhoneForm() {
     <div>
       <div className="flex items-center gap-1 mb-7">
         <Select value={countryCode} onValueChange={setCountryCode}>
-          <SelectTrigger className="w-32">
+          <SelectTrigger>
             <SelectValue placeholder="Код" />
           </SelectTrigger>
           <SelectContent>

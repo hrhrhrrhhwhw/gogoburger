@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Onest  } from 'next/font/google'
 
 import './globals.css'
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const onest = Onest({ subsets: ['latin'], variable: '--font-sans' })
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ru" suppressHydrationWarning className={cn('antialiased', 'font-sans', inter.variable)}>
+    <html lang="ru" suppressHydrationWarning className={cn('antialiased', 'font-sans', onest.variable)}>
       <body className="bg-background md:mx-auto md:max-w-6xl">{children}</body>
     </html>
   )

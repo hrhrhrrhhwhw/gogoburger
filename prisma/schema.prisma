@@ -11,3 +11,107 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  phone String?  @unique
+
+  orders  Order[]
+  address String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id   Int    @id @default(autoincrement())
+
+  translations CategoryTranslation[]
+  products     Product[]
+}
+
+model CategoryTranslation {
+  id         Int    @id @default(autoincrement())
+  categoryId Int
+  locale     String
+  name       String
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([categoryId, locale])
+}
+
+model Product {
+  id Int @id @default(autoincrement())
+
+  categoryId    Int
+  imageUrl      String
+  weightInGrams Int?
+  calories      Int?
+  proteins      Float?
+  fats          Float?
+  carbs         Float?
+  price         Int
+  isAvailable   Boolean @default(true)
+
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+
+  translations ProductTranslation[]
+  orderItems   OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+}
+
+model ProductTranslation {
+  id Int @id @default(autoincrement())
+
+  productId   Int
+  locale      String
+  name        String
+  slug        String
+  description String?
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, locale])
+  @@unique([locale, slug])
+}
+
+model Order {
+  id        Int  @id @default(autoincrement())
+  userId    Int?
+  addressId Int?
+
+  totalPrice Int
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([addressId])
+}
+
+model OrderItem {
+  id        Int @id @default(autoincrement())
+  orderId   Int
+  productId Int
+
+  quantity Int
+  price    Int
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@index([orderId])
+  @@index([productId])
+}

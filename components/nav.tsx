@@ -26,10 +26,12 @@ const navItems = [
 export default function Nav() {
   return (
     <nav>
-      <ul className="flex gap-4 text-sm py-4 border-b-[0.1px]">
+      <ul className="flex gap-4 text-sm">
         {navItems.map((item) => (
           <li key={item.id}>
-            <Link className='hover:text-link-hover' href={item.slug}>{item.name}</Link>
+            <Link className="hover:text-link-hover" href={item.slug}>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>

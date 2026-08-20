@@ -1,6 +1,4 @@
 import { Avatar, AvatarImage } from '@/components/ui/avatar'
-import { Button } from './ui/button'
-import { ShoppingBasket } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -10,25 +8,22 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 import PhoneForm from './phone-form'
+import CartMenu from './cart-menu'
 
 export default function Header() {
-
   return (
-    <div className="sticky flex items-center justify-between py-4">
+    <div className="sticky top-0 z-9 flex h-24 items-center justify-between bg-background">
       <div>
         <div className="flex gap-4">
           <img src="https://cdn-icons-png.flaticon.com/128/5787/5787016.png" className="h-14 w-14" alt="avatar" />
-          <span className="text-accent-text text-xl font-extrabold">
+          <span className="text-xl font-extrabold text-accent-text">
             GOGO<br></br>BURGER
           </span>
         </div>
       </div>
       <div className="flex gap-4">
         <div>
-          <Button size="lg">
-            <ShoppingBasket />
-            1490 AMD
-          </Button>
+          <CartMenu />
         </div>
         <Dialog>
           <DialogTrigger className="hover:cursor-pointer">
