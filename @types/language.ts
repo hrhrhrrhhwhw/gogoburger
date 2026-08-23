@@ -1,1 +1,3 @@
-export type Locale = 'hy' | 'ru' | 'en'
+export type Locale = {
+  locale: 'hy' | 'ru' | 'en'
+}
