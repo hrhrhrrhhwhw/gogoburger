@@ -10,16 +10,14 @@ export default function Footer() {
         <a
           href="https://appgallery.huawei.com/app/C101170713?sharePrepath=ag&amp;source=website"
           target="_blank"
-          aria-label="Скачать приложение для Huawei в AppGallery"
-          class="badge">
+          aria-label="Скачать приложение для Huawei в AppGallery">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="135"
             height="40"
             fill="none"
             viewBox="0 0 668 200"
-            aria-hidden="true"
-            class="badge-img">
+            aria-hidden="true">
             <path
               fill="#B6B6B6"
               d="M620.806 0H37.494c-3.337.134-6.675.267-9.88.935-3.337.534-6.408 1.602-9.345 3.07-2.937 1.469-5.607 3.472-8.01 5.875-2.404 2.403-4.273 5.073-5.875 8.01-1.602 3.071-2.537 6.142-3.07 9.346-.535 3.338-.802 6.542-.935 9.88 0 1.469 0 3.07-.134 4.54v116.688c0 1.469 0 3.071.134 4.54.133 3.338.267 6.675.934 9.88.534 3.337 1.602 6.408 3.07 9.345 1.47 2.938 3.472 5.608 5.876 8.011 2.403 2.403 5.073 4.273 8.01 5.875 3.07 1.602 6.142 2.536 9.346 3.07 3.338.534 6.676.801 9.88.935h593.191c3.337-.134 6.675-.267 9.879-.935 3.338-.534 6.409-1.602 9.48-3.07 2.937-1.469 5.607-3.472 8.01-5.875 2.404-2.27 4.273-5.073 5.875-8.011 1.469-2.937 2.537-6.141 3.071-9.345.667-3.338.801-6.542.934-9.88V37.249c-.133-3.337-.267-6.675-.934-9.88-.534-3.337-1.602-6.408-3.071-9.345s-3.471-5.607-5.875-8.01c-2.269-2.404-5.073-4.273-8.01-5.875-3.071-1.469-6.142-2.537-9.48-3.07-3.204-.535-6.542-.802-9.879-.935h-4.54C624.411 0 622.675 0 620.806 0"></path>
@@ -42,15 +40,13 @@ export default function Footer() {
         <a
           href="https://app.appsflyer.com/ru.dodopizza.app?af_ad=icon&amp;pid=dodopizza.site&amp;af_click_lookback=7d&amp;c=web"
           target="_blank"
-          aria-label="Скачать приложение для Android"
-          class="badge">
+          aria-label="Скачать приложение для Android">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="135"
             height="40"
             fill="none"
-            aria-hidden="true"
-            class="badge-img">
+            aria-hidden="true">
             <path fill="#000" d="M130 0H5a5 5 0 0 0-5 5v30a5 5 0 0 0 5 5h125a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5"></path>
             <path
               fill="#A6A6A6"
@@ -116,15 +112,13 @@ export default function Footer() {
         <a
           href="https://app.appsflyer.com/id894649641?af_ad=icon&amp;pid=dodopizza.site&amp;af_click_lookback=7d&amp;c=web"
           target="_blank"
-          aria-label="Скачать приложение для iOS"
-          class="badge">
+          aria-label="Скачать приложение для iOS">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="120"
             height="40"
             fill="none"
-            aria-hidden="true"
-            class="badge-img">
+            aria-hidden="true">
             <g clip-path="url(#5f286d-a)">
               <path
                 fill="#A6A6A6"

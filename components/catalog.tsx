@@ -3,9 +3,37 @@
 import { useRef } from 'react'
 import ProductCard from './product-card'
 import { Button } from './ui/button'
+import { Prisma } from '@/app/generated/prisma/client'
 
-export default function Catalog({ categories, products }) {
-  const categoryRefs = useRef<Record<number, HTMLDivElement | null>>({})
+type CatalogProps = {
+  categories: Prisma.CategoryGetPayload<{
+    select: {
+      id: true
+      translations: {
+        select: {
+          name: true
+        }
+      }
+    }
+  }>[]
+
+  products: Prisma.ProductGetPayload<{
+    select: {
+      categoryId: true
+      price: true
+      imageUrl: true
+      translations: {
+        select: {
+          name: true
+          slug: true
+        }
+      }
+    }
+  }>[]
+}
+
+export default function Catalog({ categories, products }: CatalogProps) {
+  const categoryRefs = useRef<Record<number, HTMLElement | null>>({})
 
   const scrollToCategory = (categoryId: number) => {
     categoryRefs.current[categoryId]?.scrollIntoView({
@@ -16,7 +44,7 @@ export default function Catalog({ categories, products }) {
 
   return (
     <div>
-      <ul className="sticky top-24 py-5 flex gap-4 overflow-x-auto z-9 bg-background">
+      <ul className="sticky top-24 z-9 flex gap-4 overflow-x-auto bg-background py-5">
         {categories.map((category) => (
           <li key={category.id}>
             <Button

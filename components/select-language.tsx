@@ -12,13 +12,15 @@ const languages = [
 export default function SelectLanguage({ locale }: { locale: string }) {
   const router = useRouter()
 
-  const handleChange = (newLocale: string) => {
+  const handleChange = (newLocale: string | null) => {
+    if (!newLocale) return
+    
     router.push(`/${newLocale}`)
   }
 
   return (
     <Select value={locale} onValueChange={handleChange}>
-      <SelectTrigger size="">
+      <SelectTrigger size="default">
         <SelectValue/>
       </SelectTrigger>
       <SelectContent>
