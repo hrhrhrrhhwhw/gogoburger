@@ -6,7 +6,7 @@ export default function Footer() {
         <span>8511</span>
         <span>8511@gogoburger.com</span>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         <a
           href="https://appgallery.huawei.com/app/C101170713?sharePrepath=ag&amp;source=website"
           target="_blank"

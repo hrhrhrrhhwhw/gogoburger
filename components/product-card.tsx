@@ -1,9 +1,10 @@
 import { Prisma } from '@/app/generated/prisma/client'
+import Image from 'next/image'
 
 type ProductCardProps = {
   product: Prisma.ProductGetPayload<{
     select: {
-      categoryId: true
+      id: true
       price: true
       imageUrl: true
       translations: {
@@ -18,11 +19,13 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="group flex w-[193px] cursor-pointer flex-col items-center">
-      <div className="flex h-[193px] w-[193px] items-center justify-center">
-        <img
+    <div className="group flex w-48.25 cursor-pointer flex-col items-center">
+      <div className="flex h-48.25 w-48.25 items-center justify-center">
+        <Image
           src={product.imageUrl}
-          alt={product.translations[0]?.name}
+          alt={product.translations[0]?.name ?? ''}
+          width={256}
+          height={256}
           className="h-full w-full object-contain transition-transform duration-300 ease-out group-hover:scale-105"
         />
       </div>

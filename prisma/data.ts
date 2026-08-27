@@ -132,14 +132,14 @@ export const product = [
     categoryId: 3,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/74e6ddde00fbe9e8e554ba96a21592e5.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/74e6ddde00fbe9e8e554ba96a21592e5.png',
 
     weightInGrams: 337,
     calories: 318,
     proteins: 23,
     fats: 13,
     carbs: 15,
-    price: 609,
+    price: 2700,
 
     translations: [
       {
@@ -164,14 +164,14 @@ export const product = [
     categoryId: 3,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/49e89b5a743c3f7673e569038c839f00.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/49e89b5a743c3f7673e569038c839f00.png',
 
     weightInGrams: 337,
     calories: 318,
     proteins: 23,
     fats: 13,
     carbs: 15,
-    price: 589,
+    price: 2500,
 
     translations: [
       {
@@ -196,14 +196,14 @@ export const product = [
     categoryId: 3,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/c4b08f2da6def7ff3a566fcb749d2dd0.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/c4b08f2da6def7ff3a566fcb749d2dd0.png',
 
     weightInGrams: 274,
     calories: 263,
     proteins: 16,
     fats: 10,
     carbs: 19,
-    price: 614,
+    price: 2600,
 
     translations: [
       {
@@ -228,14 +228,14 @@ export const product = [
     categoryId: 3,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/45b05f26b50a1aa0adad326b22c7a7f8.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/45b05f26b50a1aa0adad326b22c7a7f8.png',
 
     weightInGrams: 274,
     calories: 263,
     proteins: 16,
     fats: 10,
     carbs: 19,
-    price: 389,
+    price: 1650,
 
     translations: [
       {
@@ -262,9 +262,15 @@ export const product = [
     categoryId: 2,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/e0dedb86ad1623c34c9721742eb29524.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/e0dedb86ad1623c34c9721742eb29524.png',
 
-    price: 1129,
+    weightInGrams: 1000,
+    calories: 1242,
+    proteins: 59,
+    fats: 30,
+    carbs: 79,
+
+    price: 4792,
 
     translations: [
       {
@@ -289,9 +295,15 @@ export const product = [
     categoryId: 2,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/4fccd6ffa9715f78223dd9de484f2b0b.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/4fccd6ffa9715f78223dd9de484f2b0b.png',
 
-    price: 409,
+    weightInGrams: 1200,
+    calories: 1342,
+    proteins: 49,
+    fats: 20,
+    carbs: 99,
+
+    price: 1740,
 
     translations: [
       {
@@ -318,9 +330,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/54de00251c68c1a58ae956d6012d0f2c.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/54de00251c68c1a58ae956d6012d0f2c.png',
 
-    price: 69,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 292,
 
     translations: [
       {
@@ -345,9 +363,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/c0cda2922da0729f77b6668197789b0e.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/c0cda2922da0729f77b6668197789b0e.png',
 
-    price: 79,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 252,
 
     translations: [
       {
@@ -372,9 +396,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/888e434d84d1bb64e7dfcb90fd1fa9d1.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/888e434d84d1bb64e7dfcb90fd1fa9d1.png',
 
-    price: 89,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 292,
 
     translations: [
       {
@@ -399,9 +429,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/6d32b71790fd02f555bf481520f3b039.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/6d32b71790fd02f555bf481520f3b039.png',
 
-    price: 74,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 310,
 
     translations: [
       {
@@ -426,9 +462,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/113a95dc05a2ccc8beb2daa7faceb69e.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/113a95dc05a2ccc8beb2daa7faceb69e.png',
 
-    price: 74,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 292,
 
     translations: [
       {
@@ -453,9 +495,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/faa292b977d2bfbece1e6366cb525f6a.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/faa292b977d2bfbece1e6366cb525f6a.png',
 
-    price: 74,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 292,
 
     translations: [
       {
@@ -480,9 +528,15 @@ export const product = [
     categoryId: 4,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/686ff8b64da74a89ed39f054feed9d1b.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/686ff8b64da74a89ed39f054feed9d1b.png',
 
-    price: 62,
+    weightInGrams: 25,
+    calories: 93,
+    proteins: 1,
+    fats: 10,
+    carbs: 1,
+
+    price: 200,
 
     translations: [
       {
@@ -509,9 +563,15 @@ export const product = [
     categoryId: 5,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/d3e4750db9754ddab3a29e43b49fccf9.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/d3e4750db9754ddab3a29e43b49fccf9.png',
 
-    price: 109,
+    weightInGrams: 100,
+    calories: 200,
+    proteins: 7,
+    fats: 4,
+    carbs: 32,
+
+    price: 462,
 
     translations: [
       {
@@ -536,25 +596,31 @@ export const product = [
     categoryId: 5,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/cffe1874b0a8f897dcd57a1200f77265.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/cffe1874b0a8f897dcd57a1200f77265.png',
 
-    price: 164,
+    weightInGrams: 100,
+    calories: 200,
+    proteins: 7,
+    fats: 4,
+    carbs: 32,
+
+    price: 462,
 
     translations: [
       {
         locale: 'ru',
-        name: 'Кинг Фри',
-        slug: 'king-fri-164',
+        name: 'Наггетсы (9 шт.)',
+        slug: 'king-fri-462',
       },
       {
         locale: 'en',
-        name: 'King Fries',
-        slug: 'king-fries-164',
+        name: 'Naggets (9 pieces)',
+        slug: 'king-fries-462',
       },
       {
         locale: 'hy',
-        name: 'Քինգ Ֆրի',
-        slug: 'king-fri-164',
+        name: 'Նագեթներ (9 հատ)',
+        slug: 'king-fri-462',
       },
     ],
   },
@@ -563,7 +629,13 @@ export const product = [
     categoryId: 5,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/f511e2b64715a9473f189a1abb105d37.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/f511e2b64715a9473f189a1abb105d37.png',
+
+    weightInGrams: 100,
+    calories: 200,
+    proteins: 7,
+    fats: 4,
+    carbs: 32,
 
     price: 599,
 
@@ -592,9 +664,15 @@ export const product = [
     categoryId: 6,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/group/68b578b7705de76758395d89a0d71bc2.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/68b578b7705de76758395d89a0d71bc2.png',
 
-    price: 189,
+    weightInGrams: 500,
+    calories: 220,
+    proteins: 0,
+    fats: 0,
+    carbs: 56,
+
+    price: 800,
 
     translations: [
       {
@@ -619,9 +697,15 @@ export const product = [
     categoryId: 6,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/e4520d1620ba9b5cfce0619abea90d09.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/e4520d1620ba9b5cfce0619abea90d09.png',
 
-    price: 99,
+    weightInGrams: 500,
+    calories: 0,
+    proteins: 0,
+    fats: 0,
+    carbs: 0,
+
+    price: 420,
 
     translations: [
       {
@@ -646,7 +730,7 @@ export const product = [
     categoryId: 6,
 
     imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x256/catalog/images/dishes/557358e3a81675d349ea240d14d8162a.png',
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/557358e3a81675d349ea240d14d8162a.png',
 
     price: 109,
 
