@@ -5,49 +5,11 @@ import Header from '@/components/header'
 import Nav from '@/components/nav'
 import ProductsGroupList from '@/components/products-group-list'
 import SelectLanguage from '@/components/select-language'
-import prisma from '@/lib/prisma'
+import { getDataFromPrisma } from '@/lib/data'
 
 export default async function Page({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params
-
-  const categories = await prisma.category.findMany({
-    select: {
-      id: true,
-
-      translations: {
-        where: {
-          locale,
-        },
-        select: {
-          name: true,
-        },
-      },
-
-      products: {
-        select: {
-          id: true,
-          price: true,
-          imageUrl: true,
-          weightInGrams: true,
-          calories: true,
-          proteins: true,
-          fats: true,
-          carbs: true,
-          translations: {
-            where: {
-              locale,
-            },
-            select: {
-              name: true,
-              slug: true,
-            },
-          },
-        },
-      },
-    },
-  })
-
-  console.log(categories)
+  const categories = await getDataFromPrisma(locale)
 
   return (
     <div>
@@ -73,7 +35,7 @@ export default async function Page({ params }: { params: Promise<{ locale: Local
           )}
         </div>
       </div>
-      <div className="my-20 border-t-[0.1px] pt-5 px-4">
+      <div className="my-20 border-t-[0.1px] px-4 pt-5">
         <Footer />
       </div>
     </div>

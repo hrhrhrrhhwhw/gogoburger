@@ -114,7 +114,7 @@ export default function ProductModal({ product }: ProductModalProps) {
             <div>
               <DrawerTitle>{product.translations[0].name}</DrawerTitle>
               <DrawerDescription>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 pb-4 justify-center">
                   <span>{product.weightInGrams} гр</span>
                   <span>{product.calories} Ккл</span>
                 </div>
@@ -123,7 +123,7 @@ export default function ProductModal({ product }: ProductModalProps) {
           </DrawerHeader>
         </div>
         <DrawerFooter>
-          <div className="text-left text-2xl font-bold">{product.price} AMD</div>
+          <div className="text-center text-2xl font-bold text-foreground">{product.price} AMD</div>
           <AddItemToCart />
         </DrawerFooter>
       </DrawerContent>
