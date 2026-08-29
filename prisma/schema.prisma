@@ -16,20 +16,28 @@ model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
-  phone String?  @unique
+  phone String? @unique
 
   orders  Order[]
   address String?
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  emailVerified Boolean   @default(false)
+  image         String?
+  sessions      Session[]
+  accounts      Account[]
+
+  @@map("user")
 }
 
 model Category {
-  id   Int    @id @default(autoincrement())
+  id Int @id @default(autoincrement())
 
   translations CategoryTranslation[]
   products     Product[]
+
+  @@map("category")
 }
 
 model CategoryTranslation {
@@ -41,6 +49,7 @@ model CategoryTranslation {
   category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
 
   @@unique([categoryId, locale])
+  @@map("category-translation")
 }
 
 model Product {
@@ -65,6 +74,7 @@ model Product {
   updatedAt DateTime @updatedAt
 
   @@index([categoryId])
+  @@map("product")
 }
 
 model ProductTranslation {
@@ -80,6 +90,7 @@ model ProductTranslation {
 
   @@unique([productId, locale])
   @@unique([locale, slug])
+  @@map("product-translation")
 }
 
 model Order {
@@ -98,6 +109,7 @@ model Order {
 
   @@index([userId])
   @@index([addressId])
+  @@map("order")
 }
 
 model OrderItem {
@@ -114,4 +126,57 @@ model OrderItem {
 
   @@index([orderId])
   @@index([productId])
+  @@map("order-item")
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+
+  users User[]
+
+  @@unique([token])
+  @@index([userId])
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id
+  issuer                String
+  accountId             String
+  providerId            String
+  userId                String
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  users User[]
+
+  @@unique([issuer, accountId], map: "account_issuer_accountId_uidx")
+  @@index([userId])
+  @@map("account")
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+  @@map("verification")
 }

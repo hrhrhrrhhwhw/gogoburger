@@ -16,7 +16,7 @@ export const categories = [
         name: 'New',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Նորույթներ',
       },
     ],
@@ -33,7 +33,7 @@ export const categories = [
         name: 'Combos',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կոմբո',
       },
     ],
@@ -50,7 +50,7 @@ export const categories = [
         name: 'Burgers',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Բուրգերներ',
       },
     ],
@@ -67,7 +67,7 @@ export const categories = [
         name: 'Sauces',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Սոուսներ',
       },
     ],
@@ -84,7 +84,7 @@ export const categories = [
         name: 'Snacks',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Խորտիկներ',
       },
     ],
@@ -101,7 +101,7 @@ export const categories = [
         name: 'Drinks',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Ըմպելիքներ',
       },
     ],
@@ -118,7 +118,7 @@ export const categories = [
         name: 'Coupons',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կտրոններ',
       },
     ],
@@ -153,7 +153,7 @@ export const product = [
         slug: 'angus-4-cheese',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Անգուս 4 պանիր',
         slug: 'angus-4-panir',
       },
@@ -185,7 +185,7 @@ export const product = [
         slug: 'angus-parmigiano',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Անգուս Պարմեջանո',
         slug: 'angus-parmedzhano',
       },
@@ -217,7 +217,7 @@ export const product = [
         slug: 'whopper',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Վոպպեր',
         slug: 'vopper',
       },
@@ -249,7 +249,7 @@ export const product = [
         slug: 'new-big-king',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Նոր Բիգ Քինգ',
         slug: 'nor-big-king',
       },
@@ -284,7 +284,7 @@ export const product = [
         slug: 'fire-combo-for-two-with-big-king',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կրակոտ կոմբո երկուսի համար Բիգ Քինգով',
         slug: 'krakot-kombo-erkusi-hamar-big-kingov',
       },
@@ -317,7 +317,7 @@ export const product = [
         slug: 'classic-small-combo',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Դասական փոքր կոմբո',
         slug: 'dasakan-pokr-kombo',
       },
@@ -352,7 +352,7 @@ export const product = [
         slug: 'cheese-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Պանրի սոուս',
         slug: 'panri-sous',
       },
@@ -385,7 +385,7 @@ export const product = [
         slug: 'parmigiano-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Պարմեջանո սոուս',
         slug: 'parmedzhano-sous',
       },
@@ -418,7 +418,7 @@ export const product = [
         slug: 'garlic-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Սխտորի սոուս',
         slug: 'skhtori-sous',
       },
@@ -451,7 +451,7 @@ export const product = [
         slug: 'sweet-and-sour-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Քաղցր և թթու սոուս',
         slug: 'kaghtsr-ev-ttu-sous',
       },
@@ -484,7 +484,7 @@ export const product = [
         slug: 'curry-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կարի սոուս',
         slug: 'kari-sous',
       },
@@ -517,7 +517,7 @@ export const product = [
         slug: 'caesar-sauce',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կեսարի սոուս',
         slug: 'kesari-sous',
       },
@@ -550,7 +550,7 @@ export const product = [
         slug: 'ketchup',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Կետչուպ',
         slug: 'ketchup',
       },
@@ -585,7 +585,7 @@ export const product = [
         slug: 'king-fries-109',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Քինգ Ֆրի',
         slug: 'king-fri-109',
       },
@@ -618,7 +618,7 @@ export const product = [
         slug: 'king-fries-462',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Նագեթներ (9 հատ)',
         slug: 'king-fri-462',
       },
@@ -651,7 +651,7 @@ export const product = [
         slug: 'shrimp',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Ծովախեցգետին',
         slug: 'tsovakhetsgetin',
       },
@@ -686,7 +686,7 @@ export const product = [
         slug: 'evervess-cola-03',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Էվերվես Կոլա 0.3',
         slug: 'evervess-kola-03',
       },
@@ -719,7 +719,7 @@ export const product = [
         slug: 'aqua-minerale-sparkling-water-05l',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'Ակվա Միներալե գազավորված ջուր 0.5լ',
         slug: 'akva-minerale-gazavorvats-jur-05l',
       },
@@ -746,9 +746,9 @@ export const product = [
         slug: 'j7-orange-tangerine-juice-02',
       },
       {
-        locale: 'hy',
+        locale: 'am',
         name: 'J7 նարնջի-մանդարինի հյութ 0.2լ',
-        slug: 'j7-narnji-mandarini-hyut-02',
+        slug: 'j7-narnji-mandarini-amut-02',
       },
     ],
   },

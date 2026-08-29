@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from './ui/select'
 
 const languages = [
-  { value: 'hy', label: 'Հայերեն' },
+  { value: 'am', label: 'Հայերեն' },
   { value: 'ru', label: 'Русский' },
   { value: 'en', label: 'English' },
 ]

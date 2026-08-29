@@ -16,11 +16,6 @@ const navItems = [
     name: 'Контакты',
     slug: '/contact',
   },
-  {
-    id: 4,
-    name: 'Акции',
-    slug: '/bonusaction',
-  },
 ]
 
 export default function Nav() {
