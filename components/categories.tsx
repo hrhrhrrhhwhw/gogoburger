@@ -1,34 +1,17 @@
-'use client'
-
-import { Prisma } from '@/app/generated/prisma/client'
 import { Button } from './ui/button'
+import { getGategories } from '@/lib/categories'
 
-type CategoriesProps = {
-  categories: Prisma.CategoryGetPayload<{
-    select: {
-      id: true
-      translations: {
-        select: {
-          name: true
-        }
-      }
-    }
-  }>[]
-  activeCategory: number | null
+interface Props {
+  locale: string
 }
 
-export default function Categories({ categories, activeCategory }: CategoriesProps) {
+export default async function Categories({ locale }: Props) {
+  const categories = await getGategories(locale)
   return (
     <ul className="sticky top-24 z-9 flex gap-4 overflow-x-auto bg-background py-5">
       {categories.map((category) => (
         <li key={category.id}>
-          <Button
-            variant="ghost"
-            className={
-              activeCategory === category.id
-                ? 'rounded-4xl bg-foreground px-4 py-2 text-base font-bold text-background'
-                : 'rounded-4xl px-4 py-2 text-base font-bold'
-            }>
+          <Button variant="ghost" className="text-base font-medium">
             {category.translations[0]?.name}
           </Button>
         </li>

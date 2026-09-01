@@ -1,4 +1,6 @@
 import { Locale } from '@/@types/language'
+import Categories from '@/components/categories'
+import CategoriesSkeleton from '@/components/categories-skeleton'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Nav from '@/components/nav'
@@ -17,9 +19,15 @@ export default async function Page({ params }: { params: Promise<{ locale: Local
         <SelectLanguage locale={locale} />
       </div>
       <Header />
-      <Suspense fallback={<ProductCardSkeletons count={8} />}>
-        <Products locale={locale} />
-      </Suspense>
+      <div className='flex flex-col gap-10'>
+        <Suspense fallback={<CategoriesSkeleton />}>
+          <Categories locale={locale} />
+        </Suspense>
+
+        <Suspense fallback={<ProductCardSkeletons count={8} />}>
+          <Products locale={locale} />
+        </Suspense>
+      </div>
 
       <div className="my-20 border-t-[0.1px] px-4 pt-5">
         <Footer />

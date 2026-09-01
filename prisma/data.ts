@@ -9,23 +9,6 @@ export const categories = [
     translations: [
       {
         locale: 'ru',
-        name: 'Новинки',
-      },
-      {
-        locale: 'en',
-        name: 'New',
-      },
-      {
-        locale: 'am',
-        name: 'Նորույթներ',
-      },
-    ],
-  },
-  {
-    id: 2,
-    translations: [
-      {
-        locale: 'ru',
         name: 'Комбо',
       },
       {
@@ -39,7 +22,7 @@ export const categories = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     translations: [
       {
         locale: 'ru',
@@ -56,7 +39,7 @@ export const categories = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     translations: [
       {
         locale: 'ru',
@@ -73,7 +56,7 @@ export const categories = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     translations: [
       {
         locale: 'ru',
@@ -90,7 +73,7 @@ export const categories = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     translations: [
       {
         locale: 'ru',
@@ -107,7 +90,7 @@ export const categories = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     translations: [
       {
         locale: 'ru',

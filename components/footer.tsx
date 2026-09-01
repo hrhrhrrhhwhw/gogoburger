@@ -75,29 +75,29 @@ export default function Footer() {
               opacity="0.25"></path>
             <defs>
               <linearGradient id="0152a5-a" x1="21.8" x2="5.02" y1="8.71" y2="25.49" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#00A0FF"></stop>
-                <stop offset="0.01" stop-color="#00A1FF"></stop>
-                <stop offset="0.26" stop-color="#00BEFF"></stop>
-                <stop offset="0.51" stop-color="#00D2FF"></stop>
-                <stop offset="0.76" stop-color="#00DFFF"></stop>
-                <stop offset="1" stop-color="#00E3FF"></stop>
+                <stop stopColor="#00A0FF"></stop>
+                <stop offset="0.01" stopColor="#00A1FF"></stop>
+                <stop offset="0.26" stopColor="#00BEFF"></stop>
+                <stop offset="0.51" stopColor="#00D2FF"></stop>
+                <stop offset="0.76" stopColor="#00DFFF"></stop>
+                <stop offset="1" stopColor="#00E3FF"></stop>
               </linearGradient>
               <linearGradient id="0152a5-b" x1="33.83" x2="9.64" y1="20" y2="20" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FFE000"></stop>
-                <stop offset="0.41" stop-color="#FFBD00"></stop>
-                <stop offset="0.78" stop-color="orange"></stop>
-                <stop offset="1" stop-color="#FF9C00"></stop>
+                <stop stopColor="#FFE000"></stop>
+                <stop offset="0.41" stopColor="#FFBD00"></stop>
+                <stop offset="0.78" stopColor="orange"></stop>
+                <stop offset="1" stopColor="#FF9C00"></stop>
               </linearGradient>
               <linearGradient id="0152a5-c" x1="24.83" x2="2.07" y1="22.3" y2="45.05" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF3A44"></stop>
-                <stop offset="1" stop-color="#C31162"></stop>
+                <stop stopColor="#FF3A44"></stop>
+                <stop offset="1" stopColor="#C31162"></stop>
               </linearGradient>
               <linearGradient id="0152a5-d" x1="7.3" x2="17.46" y1="0.18" y2="10.34" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#32A071"></stop>
-                <stop offset="0.07" stop-color="#2DA771"></stop>
-                <stop offset="0.48" stop-color="#15CF74"></stop>
-                <stop offset="0.8" stop-color="#06E775"></stop>
-                <stop offset="1" stop-color="#00F076"></stop>
+                <stop stopColor="#32A071"></stop>
+                <stop offset="0.07" stopColor="#2DA771"></stop>
+                <stop offset="0.48" stopColor="#15CF74"></stop>
+                <stop offset="0.8" stopColor="#06E775"></stop>
+                <stop offset="1" stopColor="#00F076"></stop>
               </linearGradient>
             </defs>
           </svg>
