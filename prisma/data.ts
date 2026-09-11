@@ -109,140 +109,10 @@ export const categories = [
 ]
 
 export const product = [
-  // ==================== БУРГЕРЫ ====================
-
-  {
-    categoryId: 3,
-
-    imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/74e6ddde00fbe9e8e554ba96a21592e5.png',
-
-    weightInGrams: 337,
-    calories: 318,
-    proteins: 23,
-    fats: 13,
-    carbs: 15,
-    price: 2700,
-
-    translations: [
-      {
-        locale: 'ru',
-        name: 'Ангус 4 Сыра',
-        slug: 'angus-4-syra',
-      },
-      {
-        locale: 'en',
-        name: 'Angus 4 Cheese',
-        slug: 'angus-4-cheese',
-      },
-      {
-        locale: 'am',
-        name: 'Անգուս 4 պանիր',
-        slug: 'angus-4-panir',
-      },
-    ],
-  },
-
-  {
-    categoryId: 3,
-
-    imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/49e89b5a743c3f7673e569038c839f00.png',
-
-    weightInGrams: 337,
-    calories: 318,
-    proteins: 23,
-    fats: 13,
-    carbs: 15,
-    price: 2500,
-
-    translations: [
-      {
-        locale: 'ru',
-        name: 'Ангус Пармеджано',
-        slug: 'angus-parmedzhano',
-      },
-      {
-        locale: 'en',
-        name: 'Angus Parmigiano',
-        slug: 'angus-parmigiano',
-      },
-      {
-        locale: 'am',
-        name: 'Անգուս Պարմեջանո',
-        slug: 'angus-parmedzhano',
-      },
-    ],
-  },
-
-  {
-    categoryId: 3,
-
-    imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/c4b08f2da6def7ff3a566fcb749d2dd0.png',
-
-    weightInGrams: 274,
-    calories: 263,
-    proteins: 16,
-    fats: 10,
-    carbs: 19,
-    price: 2600,
-
-    translations: [
-      {
-        locale: 'ru',
-        name: 'Воппер',
-        slug: 'vopper',
-      },
-      {
-        locale: 'en',
-        name: 'Whopper',
-        slug: 'whopper',
-      },
-      {
-        locale: 'am',
-        name: 'Վոպպեր',
-        slug: 'vopper',
-      },
-    ],
-  },
-
-  {
-    categoryId: 3,
-
-    imageUrl:
-      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/45b05f26b50a1aa0adad326b22c7a7f8.png',
-
-    weightInGrams: 274,
-    calories: 263,
-    proteins: 16,
-    fats: 10,
-    carbs: 19,
-    price: 1650,
-
-    translations: [
-      {
-        locale: 'ru',
-        name: 'Биг Кинг Новый',
-        slug: 'big-king-novyy',
-      },
-      {
-        locale: 'en',
-        name: 'New Big King',
-        slug: 'new-big-king',
-      },
-      {
-        locale: 'am',
-        name: 'Նոր Բիգ Քինգ',
-        slug: 'nor-big-king',
-      },
-    ],
-  },
-
   // ==================== КОМБО ====================
 
   {
-    categoryId: 2,
+    categoryId: 1,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/e0dedb86ad1623c34c9721742eb29524.png',
@@ -275,7 +145,7 @@ export const product = [
   },
 
   {
-    categoryId: 2,
+    categoryId: 1,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/4fccd6ffa9715f78223dd9de484f2b0b.png',
@@ -306,11 +176,140 @@ export const product = [
       },
     ],
   },
+  // ==================== БУРГЕРЫ ====================
+
+  {
+    categoryId: 2,
+
+    imageUrl:
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/74e6ddde00fbe9e8e554ba96a21592e5.png',
+
+    weightInGrams: 337,
+    calories: 318,
+    proteins: 23,
+    fats: 13,
+    carbs: 15,
+    price: 2700,
+
+    translations: [
+      {
+        locale: 'ru',
+        name: 'Ангус 4 Сыра',
+        slug: 'angus-4-syra',
+      },
+      {
+        locale: 'en',
+        name: 'Angus 4 Cheese',
+        slug: 'angus-4-cheese',
+      },
+      {
+        locale: 'am',
+        name: 'Անգուս 4 պանիր',
+        slug: 'angus-4-panir',
+      },
+    ],
+  },
+
+  {
+    categoryId: 2,
+
+    imageUrl:
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/49e89b5a743c3f7673e569038c839f00.png',
+
+    weightInGrams: 337,
+    calories: 318,
+    proteins: 23,
+    fats: 13,
+    carbs: 15,
+    price: 2500,
+
+    translations: [
+      {
+        locale: 'ru',
+        name: 'Ангус Пармеджано',
+        slug: 'angus-parmedzhano',
+      },
+      {
+        locale: 'en',
+        name: 'Angus Parmigiano',
+        slug: 'angus-parmigiano',
+      },
+      {
+        locale: 'am',
+        name: 'Անգուս Պարմեջանո',
+        slug: 'angus-parmedzhano',
+      },
+    ],
+  },
+
+  {
+    categoryId: 2,
+
+    imageUrl:
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/c4b08f2da6def7ff3a566fcb749d2dd0.png',
+
+    weightInGrams: 274,
+    calories: 263,
+    proteins: 16,
+    fats: 10,
+    carbs: 19,
+    price: 2600,
+
+    translations: [
+      {
+        locale: 'ru',
+        name: 'Воппер',
+        slug: 'vopper',
+      },
+      {
+        locale: 'en',
+        name: 'Whopper',
+        slug: 'whopper',
+      },
+      {
+        locale: 'am',
+        name: 'Վոպպեր',
+        slug: 'vopper',
+      },
+    ],
+  },
+
+  {
+    categoryId: 2,
+
+    imageUrl:
+      'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/45b05f26b50a1aa0adad326b22c7a7f8.png',
+
+    weightInGrams: 274,
+    calories: 263,
+    proteins: 16,
+    fats: 10,
+    carbs: 19,
+    price: 1650,
+
+    translations: [
+      {
+        locale: 'ru',
+        name: 'Биг Кинг Новый',
+        slug: 'big-king-novyy',
+      },
+      {
+        locale: 'en',
+        name: 'New Big King',
+        slug: 'new-big-king',
+      },
+      {
+        locale: 'am',
+        name: 'Նոր Բիգ Քինգ',
+        slug: 'nor-big-king',
+      },
+    ],
+  },
 
   // ==================== СОУСЫ ====================
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/54de00251c68c1a58ae956d6012d0f2c.png',
@@ -343,7 +342,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/c0cda2922da0729f77b6668197789b0e.png',
@@ -376,7 +375,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/888e434d84d1bb64e7dfcb90fd1fa9d1.png',
@@ -409,7 +408,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/6d32b71790fd02f555bf481520f3b039.png',
@@ -442,7 +441,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/113a95dc05a2ccc8beb2daa7faceb69e.png',
@@ -475,7 +474,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/faa292b977d2bfbece1e6366cb525f6a.png',
@@ -508,7 +507,7 @@ export const product = [
   },
 
   {
-    categoryId: 4,
+    categoryId: 3,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/686ff8b64da74a89ed39f054feed9d1b.png',
@@ -543,7 +542,7 @@ export const product = [
   // ==================== ЗАКУСКИ ====================
 
   {
-    categoryId: 5,
+    categoryId: 4,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/d3e4750db9754ddab3a29e43b49fccf9.png',
@@ -576,7 +575,7 @@ export const product = [
   },
 
   {
-    categoryId: 5,
+    categoryId: 4,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/cffe1874b0a8f897dcd57a1200f77265.png',
@@ -609,7 +608,7 @@ export const product = [
   },
 
   {
-    categoryId: 5,
+    categoryId: 4,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/f511e2b64715a9473f189a1abb105d37.png',
@@ -644,7 +643,7 @@ export const product = [
   // ==================== НАПИТКИ ====================
 
   {
-    categoryId: 6,
+    categoryId: 5,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/group/68b578b7705de76758395d89a0d71bc2.png',
@@ -677,7 +676,7 @@ export const product = [
   },
 
   {
-    categoryId: 6,
+    categoryId: 5,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/e4520d1620ba9b5cfce0619abea90d09.png',
@@ -710,7 +709,7 @@ export const product = [
   },
 
   {
-    categoryId: 6,
+    categoryId: 5,
 
     imageUrl:
       'https://orderapp-app-static.burgerkingrus.ru/x512/catalog/images/dishes/557358e3a81675d349ea240d14d8162a.png',

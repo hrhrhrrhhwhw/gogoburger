@@ -2,15 +2,7 @@
 
 import { useMediaQuery } from 'usehooks-ts'
 
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog'
+import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import {
   Drawer,
   DrawerContent,
@@ -23,7 +15,6 @@ import {
 
 import ProductCard from './product-card'
 import { Prisma } from '@/app/generated/prisma/client'
-import { Button } from './ui/button'
 import Image from 'next/image'
 import AddItemToCart from './add-item-to-cart'
 import { XIcon } from 'lucide-react'
@@ -74,12 +65,11 @@ export default function ProductModal({ product }: ProductModalProps) {
             <DialogHeader className="flex w-122.5 justify-between">
               <div>
                 <DialogTitle>{product.translations[0].name}</DialogTitle>
-                <DialogDescription>
-                  <div className="flex items-center gap-4">
-                    <span>{product.weightInGrams} гр</span>
-                    <span>{product.calories} Ккл</span>
-                  </div>
-                </DialogDescription>
+                <DrawerDescription>
+                  <span>{product.weightInGrams} гр</span>
+                  {' · '}
+                  <span>{product.calories} Ккал</span>
+                </DrawerDescription>
               </div>
               <div className="flex flex-col gap-4">
                 <div className="text-left text-2xl font-bold">{product.price} AMD</div>
@@ -95,35 +85,34 @@ export default function ProductModal({ product }: ProductModalProps) {
     )
   }
   return (
-    <Drawer swipeDirection="down">
+    <Drawer swipeDirection="down" showSwipeHandle>
       <DrawerTrigger>
         <ProductCard product={product} />
       </DrawerTrigger>
-      <DrawerContent className="overflow-y-scroll">
-        <div>
+      <DrawerContent>
+        <div className="overflow-y-scroll">
           <div className="flex items-center justify-center">
             <Image
               src={product.imageUrl}
               alt={product.translations[0]?.name ?? ''}
-              width={512}
-              height={512}
+              width={256}
+              height={256}
               className="flex items-center justify-center"
             />
           </div>
           <DrawerHeader>
             <div>
               <DrawerTitle>{product.translations[0].name}</DrawerTitle>
-              <DrawerDescription>
-                <div className="flex items-center gap-4 pb-4 justify-center">
-                  <span>{product.weightInGrams} гр</span>
-                  <span>{product.calories} Ккл</span>
-                </div>
+              <DrawerDescription className="">
+                <span>{product.weightInGrams} гр</span>
+                {' · '}
+                <span>{product.calories} Ккал</span>
               </DrawerDescription>
             </div>
           </DrawerHeader>
         </div>
         <DrawerFooter>
-          <div className="text-center text-2xl font-bold text-foreground">{product.price} AMD</div>
+          <div className="text-center text-2xl font-bold text-foreground my-4">{product.price} AMD</div>
           <AddItemToCart />
         </DrawerFooter>
       </DrawerContent>
