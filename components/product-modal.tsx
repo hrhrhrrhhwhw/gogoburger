@@ -18,6 +18,16 @@ import { Prisma } from '@/app/generated/prisma/client'
 import Image from 'next/image'
 import AddItemToCart from './add-item-to-cart'
 import { XIcon } from 'lucide-react'
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from './ui/sheet'
 
 type ProductModalProps = {
   product: Prisma.ProductGetPayload<{
@@ -85,7 +95,44 @@ export default function ProductModal({ product }: ProductModalProps) {
     )
   }
   return (
-    <Drawer swipeDirection="down" showSwipeHandle>
+    <Sheet>
+      <SheetTrigger>
+        <ProductCard product={product} />
+      </SheetTrigger>
+      <SheetContent side="bottom" className="rounded-t-2xl">
+        <div className="overflow-y-scroll">
+          <div className="flex items-center justify-center">
+            <Image
+              src={product.imageUrl}
+              alt={product.translations[0]?.name ?? ''}
+              width={256}
+              height={256}
+              className="mx-auto"
+            />
+          </div>
+          <SheetHeader>
+            <div className="flex flex-col gap-1 mb-4 items-center">
+              <SheetTitle>{product.translations[0].name}</SheetTitle>
+              <SheetDescription>
+                <div className='flex gap-3'>
+                  <span>{product.weightInGrams} грамм</span>
+                  <span>{product.calories} Ккал</span>
+                </div>
+              </SheetDescription>
+            </div>
+            <div className="text-center text-2xl font-bold text-foreground">{product.price} AMD</div>
+          </SheetHeader>
+        </div>
+        <SheetFooter>
+          <AddItemToCart />
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+  )
+}
+
+{
+  /* <Drawer swipeDirection="down" showSwipeHandle>
       <DrawerTrigger>
         <ProductCard product={product} />
       </DrawerTrigger>
@@ -117,6 +164,5 @@ export default function ProductModal({ product }: ProductModalProps) {
           <AddItemToCart />
         </DrawerFooter>
       </DrawerContent>
-    </Drawer>
-  )
+    </Drawer> */
 }
