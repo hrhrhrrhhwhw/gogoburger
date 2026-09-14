@@ -61,7 +61,7 @@ export default function ProductModal({ product }: ProductModalProps) {
         <DialogTrigger>
           <ProductCard product={product} />
         </DialogTrigger>
-        <DialogContent showCloseButton={false} className="">
+        <DialogContent showCloseButton={false} className="w-[800px]">
           <div className="flex gap-4">
             <div className="flex items-center justify-center">
               <Image
@@ -99,7 +99,7 @@ export default function ProductModal({ product }: ProductModalProps) {
       <SheetTrigger>
         <ProductCard product={product} />
       </SheetTrigger>
-      <SheetContent side="bottom" className="rounded-t-2xl">
+      <SheetContent side="bottom" className="rounded-t-4xl bg-background">
         <div className="overflow-y-scroll">
           <div className="flex items-center justify-center">
             <Image
