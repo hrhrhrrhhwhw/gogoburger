@@ -12,7 +12,7 @@ export default async function Page({ params }: { params: Promise<{ locale: Local
 
   return (
     <div>
-      <div className="flex items-center justify-between border-b-[0.1px] p-4">
+      <div className="flex items-center justify-between border-b-[0.1px] px-4">
         <Nav />
         <SelectLanguage locale={locale} />
       </div>

@@ -97,7 +97,7 @@ export default function ProductModal({ product }: ProductModalProps) {
               alt={product.translations[0]?.name ?? ''}
               width={256}
               height={256}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center pt-8"
             />
           </div>
           <DrawerHeader>
@@ -108,11 +108,12 @@ export default function ProductModal({ product }: ProductModalProps) {
                 {' · '}
                 <span>{product.calories} Ккал</span>
               </DrawerDescription>
+              <div className="text-center text-2xl font-bold text-foreground">{product.price} AMD</div>
             </div>
           </DrawerHeader>
         </div>
         <DrawerFooter>
-          <div className="text-center text-2xl font-bold text-foreground my-4">{product.price} AMD</div>
+          
           <AddItemToCart />
         </DrawerFooter>
       </DrawerContent>

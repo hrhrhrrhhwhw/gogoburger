@@ -2,9 +2,9 @@
 
 import { Prisma } from '@/app/generated/prisma/client'
 import ProductModal from './product-modal'
-import { useCategoryStore } from '@/lib/store/category'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useIntersectionObserver } from 'usehooks-ts'
+import { useCategoryStore } from '@/lib/store/category'
 
 interface ProductGroupListProps {
   name: string
@@ -35,6 +35,7 @@ interface ProductGroupListProps {
 
 export default function ProductGroupList({ name, categoryId, products }: ProductGroupListProps) {
   const setActiveCategoryId = useCategoryStore((state) => state.setActiveId)
+
   const { ref, isIntersecting } = useIntersectionObserver({
     threshold: 0,
     rootMargin: '-150px 0px -50% 0px',
@@ -45,11 +46,12 @@ export default function ProductGroupList({ name, categoryId, products }: Product
     if (isIntersecting) {
       setActiveCategoryId(categoryId)
     }
-  }, [isIntersecting, categoryId, setActiveCategoryId])
+  }, [isIntersecting, name, categoryId, setActiveCategoryId])
 
   return (
-    <div ref={ref} id={`category-${categoryId}`}>
+    <div ref={ref} id={name} className="scroll-mt-18">
       <h2 className="text-xl font-extrabold text-accent-text">{name}</h2>
+
       <div className="grid grid-cols-2 gap-x-4 gap-y-2 md:grid-cols-4">
         {products.map((product) => (
           <ProductModal key={product.id} product={product} />

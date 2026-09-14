@@ -46,6 +46,7 @@
 
 :root {
     --background: #181a1f;
+    /* --background: #181a1f; */
     --foreground: oklch(100% 0.00011 271.152);
     --primary: oklch(51.107% 0.20133 25.837);
     --secondary: oklch(0.97 0 0);
@@ -91,4 +92,8 @@
   html {
     @apply font-sans;
     }
+}
+
+html {
+  scroll-behavior: smooth;
 }

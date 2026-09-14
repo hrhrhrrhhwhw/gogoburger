@@ -13,7 +13,7 @@ import HeaderDelivery from './header-delivery'
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-9 flex h-24 items-center justify-between bg-background px-4">
+    <div className="flex h-20 items-center justify-between bg-background px-4">
       <div className="flex gap-4">
         <img src="https://cdn-icons-png.flaticon.com/128/5787/5787016.png" className="h-14 w-14" alt="avatar" />
         <span className="hidden md:block text-xl font-extrabold text-accent-text">
